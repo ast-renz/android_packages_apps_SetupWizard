@@ -63,11 +63,10 @@ public class WelcomeActivity extends SubBaseActivity {
                     getString(R.string.os_name)));
         }
 
-        if (Build.TYPE.equals("eng")) {
-            skipButton.setVisibility(View.VISIBLE);
-            skipButton.setOnClickListener(v -> {
-                SetupWizardUtils.finishSetupWizard(WelcomeActivity.this);
-            });
+        skipButton.setVisibility(View.VISIBLE);
+        skipButton.setOnClickListener(v -> {
+            SetupWizardUtils.finishSetupWizard(WelcomeActivity.this);
+        });
         }
     }
 
